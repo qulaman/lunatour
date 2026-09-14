@@ -232,7 +232,7 @@
   // Flight arcs: arrival from the north-west (Almaty / Astana / Tashkent), departure back from Guangzhou
   const cq = CITIES.chongqing, gz = CITIES.guangzhou;
   const inD = `M-80 -30 Q ${cq[0] - 260} ${cq[1] - 40} ${cq[0]} ${cq[1]}`;
-  const outD = `M${gz[0]} ${gz[1]} Q ${gz[0] + 230} ${gz[1] - 300} ${gz[0] + 150} -60`;
+  const outD = `M${gz[0]} ${gz[1]} Q 560 -150 -80 -30`;
   el("path", { d: inD, class: "flight-path-bg" }, gFlight);
   el("path", { d: outD, class: "flight-path-bg" }, gFlight);
   const flightIn = el("path", { d: inD, class: "flight-path" }, gFlight);
@@ -242,7 +242,7 @@
   flightOut.style.strokeDasharray = `${outLen} ${outLen}`; flightOut.style.strokeDashoffset = outLen;
   const originLbl = el("text", { x: 24, y: 78, class: "origin-label" }, gFlight);
   originLbl.textContent = UI.from;
-  const homeLbl = el("text", { x: gz[0] + 95, y: 68, class: "origin-label" }, gFlight);
+  const homeLbl = el("text", { x: 470, y: 58, class: "origin-label" }, gFlight);
   homeLbl.textContent = UI.home;
 
   // Length along the route at each stop (nearest sample point)
