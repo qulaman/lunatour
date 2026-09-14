@@ -131,6 +131,9 @@
     setMeta('meta[name="description"]', KK_META.description);
     setMeta('meta[property="og:title"]', KK_META.ogTitle);
     setMeta('meta[property="og:description"]', KK_META.ogDescription);
+    setMeta('meta[property="og:locale"]', "kk_KZ");
+    setMeta('meta[property="og:url"]', "https://lunatour.kz/?lang=kk");
+    const canon = document.querySelector('link[rel="canonical"]'); if (canon) canon.href = "https://lunatour.kz/?lang=kk";
     // готовый текст сообщения в WhatsApp
     document.querySelectorAll('a[href*="wa.me/"][href*="text="]').forEach((a) => {
       const u = new URL(a.href); u.searchParams.set("text", KK_META.waText); a.href = u.toString();

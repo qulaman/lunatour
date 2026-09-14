@@ -1,7 +1,8 @@
 # Публикация сайта: GitHub → Cloudflare Pages
 
 - Репозиторий: https://github.com/qulaman/lunatour
-- Сайт: https://lunatour.wsupkz.workers.dev (казахская версия: https://lunatour.wsupkz.workers.dev/?lang=kk)
+- Домен: https://lunatour.kz (казахская версия: https://lunatour.kz/?lang=kk), куплен на Hoster.kz, NS-серверы переведены на Cloudflare
+- Технический адрес: https://lunatour.wsupkz.workers.dev
 - Каждый `git push` в `main` автоматически обновляет сайт через 1–2 минуты.
 
 ## 1. Репозиторий на GitHub
