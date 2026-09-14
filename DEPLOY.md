@@ -1,5 +1,9 @@
 # Публикация сайта: GitHub → Cloudflare Pages
 
+- Репозиторий: https://github.com/qulaman/lunatour
+- Сайт: https://lunatour.wsupkz.workers.dev (казахская версия: https://lunatour.wsupkz.workers.dev/?lang=kk)
+- Каждый `git push` в `main` автоматически обновляет сайт через 1–2 минуты.
+
 ## 1. Репозиторий на GitHub
 
 1. Зайдите на github.com → «New repository». Имя, например, `luna-tour-china`. Оставьте репозиторий пустым: без README, без .gitignore.
